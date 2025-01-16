@@ -6,14 +6,14 @@ window.onload = function () {
   // Fade-in animation for the greeting
   greeting.style.opacity = 1;
 
-  // Fade-in animation for the book image after the greeting
+  // Delay the fade-in of the book image after the greeting
   setTimeout(() => {
       bookImage.classList.remove("hidden");
       bookImage.style.opacity = 1;
-  }, 2000); // 2 seconds
+  }, 2000); // 2 seconds for greeting to fade in
 
   // Delay the show of buttons
   setTimeout(() => {
       buttons.style.opacity = 1;
-  }, 4000); // 4 seconds
+  }, 4000); // 4 seconds in total for buttons
 };
