@@ -29,7 +29,7 @@ h1 {
 }
 
 img {
-  width: 300px; /* Adjust the size of the book image */
+  width: 300px; /* Default image size */
   margin-top: 20px;
   opacity: 0; /* Start as invisible */
   transition: opacity 2s ease-in; /* Fade transition */
@@ -46,8 +46,8 @@ img {
 
 button {
   margin: 10px;
-  padding: 15px 30px;
-  font-size: 16px;
+  padding: 15px 30px; /* Button padding */
+  font-size: 16px; /* Button text size */
   cursor: pointer;
   border: none;
   background-color: #3C280D; /* Mocha brown */
@@ -60,7 +60,35 @@ button:hover {
   background-color: #5A3E2A; /* Darker shade for hover effect */
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2.5rem; /* Smaller welcome text for mobile */
+  }
+
+  img {
+      width: 80%; /* Responsive image size for mobile */
+      max-width: 300px; /* Limit max width */
+  }
+
+  button {
+      padding: 10px 20px; /* Smaller button padding for mobile */
+      font-size: 14px; /* Adjust button text size */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 2rem; /* Further reduce welcome text */
+  }
+
+  button {
+      padding: 8px 16px; /* Even smaller button padding for extra small devices */
+      font-size: 12px; /* Adjust button text size */
+  }
+}
+
 /* Class to show the faded element */
 .hidden {
-  display: none;
+  display: none; /* Completely hide the element */
 }
