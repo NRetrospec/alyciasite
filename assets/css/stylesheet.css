@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Dancing Script', cursive; /* Cursive font */
+  background-color: #F5E5D7; /* Nude background */
+  color: #3C280D; /* Set the text color to mocha brown */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.greeting {
+  opacity: 0;
+  transition: opacity 2s ease-in;
+}
+
+h1 {
+  font-size: 4rem; /* Making the welcome text 2x bigger */
+  color: #3C280D; /* Mocha brown */
+}
+
+img {
+  width: 300px; /* Adjust the size of the book image */
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 2s ease-in;
+}
+
+.buttons {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+button {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #3C280D; /* Mocha brown */
+  color: white; /* Keep the text color of the buttons white for contrast */
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5A3E2A; /* Darker shade for hover effect */
+}
+
+/* Class to show the faded element */
+.hidden {
+  display: none;
+}
